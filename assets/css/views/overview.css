@@ -1,0 +1,3 @@
+@layer views {
+  #view-overview .panel__body { min-height: 0; }
+}

@@ -1,0 +1,4 @@
+@layer views {
+  #view-table-lab .dashboard-grid > .panel { height: fit-content; }
+  .detail-panel .graph-container { margin: var(--space-3) calc(var(--space-3) * -1) 0; }
+}

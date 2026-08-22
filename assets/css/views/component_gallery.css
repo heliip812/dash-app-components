@@ -1,0 +1,11 @@
+@layer views {
+  .specimen-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); }
+  .specimen { padding: var(--space-5); }
+  .specimen > p { margin-bottom: var(--space-4); font-size: .76rem; }
+  .specimen__body { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+  .gallery-alerts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); margin-top: var(--space-4); }
+  .gallery-card-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); }
+  .gallery-card-grid .panel { margin: 0; }
+  @media (max-width: 1180px) { .specimen-grid, .gallery-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 620px) { .specimen-grid, .gallery-card-grid, .gallery-alerts { grid-template-columns: minmax(0, 1fr); } }
+}

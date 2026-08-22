@@ -1,0 +1,9 @@
+@layer components {
+  .dropdown { min-width: 160px; }
+  .dropdown .Select-control { min-height: 38px; color: var(--color-text); background: var(--color-surface-1); border-color: var(--color-border-strong); border-radius: var(--radius-sm); }
+  .dropdown .Select-value-label, .dropdown .Select-placeholder { color: var(--color-text) !important; line-height: 36px !important; }
+  .dropdown .Select-menu-outer { z-index: 40; color: var(--color-text); background: var(--color-surface-1); border-color: var(--color-border); }
+  .dropdown .Select-option.is-focused { background: var(--color-accent-soft); }
+  .dropdown .Select-multi-value-wrapper { display: flex; flex-wrap: wrap; gap: 2px; padding: 3px; }
+  .dropdown .Select-value { color: var(--color-accent-strong) !important; background: var(--color-accent-soft) !important; border-color: color-mix(in srgb, var(--color-accent) 35%, transparent) !important; }
+}

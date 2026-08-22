@@ -1,0 +1,5 @@
+@layer components {
+  .tooltip { position: relative; color: var(--color-accent); cursor: help; border-bottom: 1px dotted currentColor; outline: none; }
+  .tooltip__content { position: absolute; bottom: calc(100% + 8px); left: 50%; z-index: 50; width: max-content; max-width: 240px; padding: .5rem .65rem; color: white; font-size: .72rem; pointer-events: none; visibility: hidden; background: #171a2b; border-radius: var(--radius-sm); opacity: 0; transform: translate(-50%, 4px); transition: opacity var(--transition-fast), transform var(--transition-fast); }
+  .tooltip:hover .tooltip__content, .tooltip:focus .tooltip__content { visibility: visible; opacity: 1; transform: translate(-50%, 0); }
+}

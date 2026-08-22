@@ -1,0 +1,10 @@
+@layer components {
+  .badge, .table-status { display: inline-flex; align-items: center; gap: .36rem; width: fit-content; padding: .2rem .48rem; color: var(--color-text-muted); font-size: .67rem; font-weight: 750; background: var(--color-surface-3); border-radius: var(--radius-pill); }
+  .badge--positive, .table-status--positive { color: var(--color-positive); background: var(--color-positive-soft); }
+  .badge--danger, .table-status--danger { color: var(--color-negative); background: var(--color-negative-soft); }
+  .badge--warning, .table-status--warning { color: var(--color-warning); background: var(--color-warning-soft); }
+  .badge--info, .table-status--info { color: var(--color-info); background: var(--color-info-soft); }
+  .table-status > span { width: 5px; height: 5px; background: currentColor; border-radius: 50%; }
+  .capability-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); }
+  .table-count { margin-left: auto; color: var(--color-text-muted); font-size: .75rem; }
+}

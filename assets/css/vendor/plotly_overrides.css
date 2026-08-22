@@ -1,0 +1,2 @@
+.js-plotly-plot .plotly .modebar { opacity: .35; transition: opacity 150ms ease; }
+.js-plotly-plot .plotly:hover .modebar { opacity: 1; }

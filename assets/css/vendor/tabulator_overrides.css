@@ -1,0 +1,33 @@
+/* Loaded after the official MIT Tabulator stylesheet; intentionally unlayered. */
+.tabulator {
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: .78rem;
+  background: var(--color-surface-1);
+  border: 0;
+}
+.tabulator .tabulator-header {
+  color: var(--color-text-muted);
+  font-size: .68rem;
+  font-weight: 750;
+  letter-spacing: .02em;
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-border);
+}
+.tabulator .tabulator-header .tabulator-col,
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable:hover { background: var(--color-surface-2); border-right-color: var(--color-border); }
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content { padding: .72rem .7rem; }
+.tabulator .tabulator-header-filter input,
+.tabulator .tabulator-header-filter select { min-height: 28px; padding: .25rem .45rem; color: var(--color-text); background: var(--color-surface-1); border: 1px solid var(--color-border); border-radius: .35rem; }
+.tabulator-row { color: var(--color-text); background: var(--color-surface-1); border-bottom: 1px solid var(--color-border); }
+.tabulator-row.tabulator-row-even { background: color-mix(in srgb, var(--color-surface-2) 54%, var(--color-surface-1)); }
+.tabulator-row:hover { background: var(--color-accent-soft) !important; }
+.tabulator-row.tabulator-selected { background: color-mix(in srgb, var(--color-accent-soft) 80%, var(--color-surface-1)) !important; box-shadow: inset 3px 0 var(--color-accent); }
+.tabulator-row .tabulator-cell { padding: .64rem .7rem; border-right-color: var(--color-border); }
+.tabulator-row.tabulator-tree-level-1 { background: color-mix(in srgb, var(--color-surface-2) 75%, var(--color-surface-1)); }
+.tabulator-row.tabulator-tree-level-2 { color: var(--color-text-muted); background: var(--color-surface-1); }
+.tabulator .tabulator-footer { color: var(--color-text-muted); background: var(--color-surface-2); border-top: 1px solid var(--color-border); }
+.tabulator .tabulator-footer .tabulator-page { color: var(--color-text-muted); background: var(--color-surface-1); border-color: var(--color-border); border-radius: .35rem; }
+.tabulator .tabulator-footer .tabulator-page.active { color: white; background: var(--color-accent); border-color: var(--color-accent); }
+.tabulator .tabulator-placeholder span { color: var(--color-text-muted); font-size: .84rem; }
+.tabulator .tabulator-frozen { background: inherit; box-shadow: 5px 0 12px rgba(30,36,58,.04); }

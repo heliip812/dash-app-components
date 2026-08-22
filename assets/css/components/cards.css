@@ -1,0 +1,25 @@
+@layer components {
+  .panel, .metric-card, .specimen { background: var(--color-surface-1); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+  .panel { min-width: 0; margin-bottom: var(--space-5); overflow: hidden; }
+  .section-heading { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-5) var(--space-6); border-bottom: 1px solid var(--color-border); }
+  .section-heading > div:first-child { min-width: 0; }
+  .section-heading h2, .section-heading h3 { margin: 0; }
+  .section-heading p { margin: var(--space-1) 0 0; font-size: .78rem; }
+  .section-heading__actions { display: flex; align-items: center; gap: var(--space-2); }
+  .app-view > .section-heading { margin: var(--space-8) 0 var(--space-4); padding: 0; border: 0; }
+  .panel__body { padding: var(--space-5) var(--space-6); }
+  .metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); margin-bottom: var(--space-5); }
+  .metric-card { position: relative; display: grid; min-height: 132px; align-content: center; padding: var(--space-5); overflow: hidden; }
+  .metric-card::before { position: absolute; inset: 0 auto 0 0; width: 3px; content: ""; background: var(--metric-tone, var(--color-border-strong)); }
+  .metric-card--positive { --metric-tone: var(--color-positive); }
+  .metric-card--info { --metric-tone: var(--color-info); }
+  .metric-card--warning { --metric-tone: var(--color-warning); }
+  .metric-card__label { color: var(--color-text-muted); font-size: .75rem; font-weight: 650; }
+  .metric-card__value { margin: var(--space-2) 0; font-size: 1.75rem; line-height: 1; letter-spacing: -.04em; }
+  .metric-card__helper { color: var(--color-text-faint); }
+  .collapsible-panel { background: var(--color-surface-1); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+  .collapsible-panel summary { padding: var(--space-5); font-weight: 750; cursor: pointer; }
+  .collapsible-panel__body { padding: 0 var(--space-5) var(--space-5); }
+  @media (max-width: 1050px) { .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .metric-grid { grid-template-columns: minmax(0, 1fr); } .panel__body, .section-heading { padding: var(--space-4); } }
+}

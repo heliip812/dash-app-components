@@ -1,0 +1,11 @@
+@layer components {
+  .button, .icon-button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 38px; padding: .58rem .9rem; color: white; font-weight: 700; cursor: pointer; background: var(--color-accent); border: 1px solid var(--color-accent); border-radius: var(--radius-sm); transition: transform var(--transition-fast), background var(--transition-fast), border var(--transition-fast); }
+  .button:hover { background: var(--color-accent-strong); transform: translateY(-1px); }
+  .button--secondary { color: var(--color-text); background: var(--color-surface-1); border-color: var(--color-border-strong); }
+  .button--secondary:hover, .button--ghost:hover { background: var(--color-surface-3); }
+  .button--ghost { color: var(--color-text-muted); background: transparent; border-color: transparent; }
+  .button--danger { background: var(--color-negative); border-color: var(--color-negative); }
+  .button__icon { font-size: 1rem; }
+  .icon-button { width: 38px; padding: 0; color: var(--color-text-muted); background: transparent; border-color: var(--color-border); }
+  .icon-button:hover { color: var(--color-text); background: var(--color-surface-3); }
+}

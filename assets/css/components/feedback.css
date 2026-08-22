@@ -1,0 +1,14 @@
+@layer components {
+  .alert { padding: var(--space-4); color: var(--color-info); background: var(--color-info-soft); border: 1px solid color-mix(in srgb, var(--color-info) 20%, transparent); border-radius: var(--radius-md); }
+  .alert--warning { color: var(--color-warning); background: var(--color-warning-soft); border-color: color-mix(in srgb, var(--color-warning) 20%, transparent); }
+  .alert p { margin: var(--space-1) 0 0; color: currentColor; opacity: .86; }
+  .empty-state { display: grid; min-height: 250px; place-items: center; align-content: center; padding: var(--space-8); text-align: center; }
+  .empty-state__icon { display: grid; width: 48px; height: 48px; place-items: center; margin-bottom: var(--space-3); color: var(--color-accent); font-size: 1.5rem; background: var(--color-accent-soft); border-radius: 50%; }
+  .empty-state p { max-width: 340px; }
+  .loading-state { display: flex; align-items: center; gap: var(--space-3); color: var(--color-text-muted); }
+  .loading-state__spinner { width: 18px; height: 18px; border: 2px solid var(--color-border); border-top-color: var(--color-accent); border-radius: 50%; animation: spin .8s linear infinite; }
+  .graph-container { min-height: 240px; }
+  .graph-container .dash-graph { width: 100%; }
+  .graph-loading { min-height: 240px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+}

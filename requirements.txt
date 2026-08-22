@@ -1,0 +1,10 @@
+# Runtime dependencies — required features are available under permissive OSS licences.
+dash>=3.1,<5          # MIT
+plotly>=6.0,<7        # MIT
+pandas>=2.2,<3        # BSD-3-Clause
+numpy>=1.26,<3        # BSD-3-Clause; deterministic sample generation
+pyarrow>=18,<22       # Apache-2.0; Parquet/Feather engine
+gunicorn>=23,<24      # MIT; optional production WSGI server
+
+# Test dependency
+pytest>=8,<10         # MIT

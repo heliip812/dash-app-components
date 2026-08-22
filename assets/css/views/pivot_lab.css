@@ -1,0 +1,8 @@
+@layer views {
+  .pivot-controls .field:first-child, .pivot-controls .field:nth-child(2) { min-width: 220px; }
+  .segmented-control { display: inline-flex; padding: 3px; background: var(--color-surface-3); border-radius: var(--radius-sm); }
+  .segmented-control label { padding: .35rem .65rem; color: var(--color-text-muted); cursor: pointer; border-radius: calc(var(--radius-sm) - 2px); }
+  .segmented-control label:has(input:checked) { color: var(--color-text); background: var(--color-surface-1); box-shadow: var(--shadow-sm); }
+  .segmented-control input { position: absolute; opacity: 0; }
+  .result-summary { color: var(--color-text-muted); font-size: .76rem; }
+}
